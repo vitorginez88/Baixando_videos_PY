@@ -12,6 +12,6 @@ url = input("Coloque o URL do vídeo do YouTube: ")
 yt = YouTube(url, on_progress_callback=on_progress)
 #IMPORTANTE: 
 #Quando colar o código mude "USUARIO" pelo usuário que esta logado no seu computador.
-yt.streams.get_highest_resolution().download(output_path="C:/Users/USUARIO/Downloads")
+yt.streams.get_highest_resolution().download(output_path="/Users/USUARIO/Downloads")
 
 print("Download concluído!")
